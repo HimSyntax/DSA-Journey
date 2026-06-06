@@ -387,4 +387,58 @@
 
 
 
+//print nums from 1-5
+// class demo{
 
+//     public static void printNumb(int n){
+//         if(n==6 ){
+//             return;
+//         }
+//         System.out.println(n);
+//         printNumb(n+1);
+//     }
+//     public static void main(String[] args) {
+//         int n=1;
+//         printNumb(n); //n=1
+//     }
+// }
+
+
+
+//Print sum of all n natural nums
+// class demo{
+//     public static void printSum(int i, int n, int sum){
+//         if(n==i){
+//             sum+=i;
+//             System.out.println(sum);
+//             return;
+//         }
+//         sum+=i;
+//         printSum(i+1, n, sum);
+//     }
+
+//     public static void main(String[] args) {
+//         printSum(1, 5, 0);
+//     }
+// }
+
+
+
+
+//Print factorial of n num
+// class demo{
+//     public static int calcfactorial(int n){
+//         if(n==1 || n==0){
+//             return 1;
+//         }
+//         int fact_nm1 = calcfactorial(n-1);
+//         int fact_n = n * fact_nm1;
+//         return fact_n;
+//     }
+
+//     public static void main(String[] args) {
+//         int n=5;
+//         int ans = calcfactorial(n);
+//         System.out.println(ans);
+//     }
+// }
