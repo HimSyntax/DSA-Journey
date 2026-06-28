@@ -1,4 +1,6 @@
-/* JAVA DSA */
+
+
+                     //! JAVA DSA !//
 
 // import java.util.*;
 // class demo{
@@ -61,7 +63,8 @@
 //     }
 // }
 
-/* STRINGS */
+//! STRINGS //
+
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 
@@ -72,10 +75,9 @@
 //     }
 // }
 
-// COMPARE
+// COMPARE //
 
 // import java.util.Scanner;
-
 // public class demo{
 //     public static void main(String[] args) {
 
@@ -98,7 +100,8 @@
 
 
 
-// SubString
+// SubString //
+
 // class demo {
 //     public static void main(String[] args) {
 
@@ -109,7 +112,7 @@
 // }
 
 
-/* STRING BUILDER */
+//! STRING BUILDER //
 
 
 
@@ -130,7 +133,7 @@
 // }
 
 
-// Insert String
+// Insert String //
 
 // class demo{
 //     public static void main(String[] args) {
@@ -148,7 +151,7 @@
 // }
 
 
-// To Append
+// To Append //
 
 // class demo{
 //     public static void main(String[] args) {
@@ -164,7 +167,7 @@
 // }
 
 
-// To reverse string
+// To reverse string //
 
 // class demo {
 //     public static void main(String[] args) {
@@ -188,9 +191,9 @@
 
 
 
-/* BIT MANIPULATION */
+//! BIT MANIPULATION //
 
-//AND//
+//! AND //
 
 // class demo{
 //     public static void main(String[] args) {
@@ -207,7 +210,7 @@
 // }
 
 
-//SET BIT//
+//! SET BIT //
 
 // class demo{
 //     public static void main(String[] args) {
@@ -222,7 +225,7 @@
 
 
 
-//CLEAR BIT//
+//! CLEAR BIT //
 
 // class demo{
 //     public static void main(String[] args) {
@@ -238,10 +241,9 @@
 
 
 
-//UPDATE BIT//
+//! UPDATE BIT //
 
 // import java.util.Scanner;
-
 // class demo{
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
@@ -267,7 +269,7 @@
 // }
 
 
-/* SORTING */
+//! SORTING //
 
 // BUBBLE SORT //
 
@@ -298,10 +300,9 @@
 // }
 
 
-// SELECTION SORT //
+//! SELECTION SORT //
 
 // class demo{
-
 //     public static void printArray(int arr[]){
 //         for(int i=0; i<arr.length; i++){
 //             System.out.print(arr[i]+" ");
@@ -330,10 +331,9 @@
 // }
 
 
-// INSERTION SORT //
+//! INSERTION SORT //
 
 // class demo{
-
 //     public static void printArray(int arr[]){
 //         for(int i=0; i<arr.length; i++){
 //             System.out.print(arr[i]+" ");
@@ -361,17 +361,17 @@
 
 
 
-/* RECURSION */  // CLASS 1 //
+//! RECURSION //  // CLASS 1 //
 
-// A function that calls itself
-// f(x) = x^2 - given
-// f(f(x)) = f(x^2)
+//! A function that calls itself
+//! f(x) = x^2 - given !//
+//! f(f(x)) = f(x^2) !//
 
 
 
-// print nums from 5-1
+// print nums from 5-1 //
+
 // class demo{
-
 //     public static void printNumb(int n){
 //         if(n==0){
 //             return;
@@ -387,9 +387,9 @@
 
 
 
-//print nums from 1-5
-// class demo{
+// print nums from 1-5 //
 
+// class demo{
 //     public static void printNumb(int n){
 //         if(n==6 ){
 //             return;
@@ -405,7 +405,8 @@
 
 
 
-//Print sum of all n natural nums
+// Print sum of all n natural nums //
+
 // class demo{
 //     public static void printSum(int i, int n, int sum){
 //         if(n==i){
@@ -425,7 +426,8 @@
 
 
 
-//Print factorial of n num
+// Print factorial of n num //
+
 // class demo{
 //     public static int calcfactorial(int n){
 //         if(n==1 || n==0){
@@ -445,7 +447,8 @@
 
 
 
-//Print the fibonacci sequence till n'th term
+// Print the fibonacci sequence till n'th term //
+
 // class demo{
 //     public static void printFib(int a, int b, int n){
 //         if(n==0){
@@ -466,7 +469,8 @@
 
 
 
-//Print x^n (stack height = n)
+// Print x^n (stack height = n) //
+
 // class demo{
 //     public static int calcPower(int x, int n){
 //         if(n==0){ //base case 1
@@ -488,7 +492,8 @@
 
 
 
-//Print x^n (stack height = logn)
+// Print x^n (stack height = logn) //
+
 // class demo{
 //     public static int calcPower(int x, int n){
 //         if(n==0){ //base case 1
@@ -515,9 +520,7 @@
 
 
 
-
-
-/* RECURSION */  // CLASS 2 //
+//! RECURSION //  // CLASS 2 //
 
 // Tower of Hanoi // 
 
@@ -546,6 +549,7 @@
 
 // Print a string in reverse //
 // time complexity = O(n) //
+
 // class demo{
 //         public static void printRev(String str, int idx){
 //                 if(idx==0){
@@ -565,6 +569,7 @@
 
 // Find the 1st & last occurance of an element in string //
 // time complexity = O(n) //
+
 // class demo{
 //         public static int first = -1;
 //         public static int last = -1;
@@ -596,6 +601,7 @@
 
 // Check if an array is sorted( strictly increasing) //
 // time complexity = O(n) //
+
 // class demo{
 //         public static boolean isSorted( int arr[], int idx){
 //                 if(idx==arr.length-1){
@@ -619,6 +625,7 @@
 
 // Move all 'x' to the end of the string //
 // time complexity = O(2n) which is O(n) //
+
 // class demo{
 //         public static void moveAllX( String str, int idx, int count, String newString){
 //                 if(idx==str.length()){
@@ -647,6 +654,7 @@
 
 // Remove duplicates in a string //
 // time complexity = O(n) // 
+
 // class demo{
 //         public static boolean[] map = new boolean[26];
 
@@ -674,6 +682,7 @@
 
 // Print all the subsequences of a string //
 // time complexity = O(2^n) //
+
 // class demo{
 //         public static void subsequences( String str, int idx, String newString){
 //                 if(idx==str.length()){
@@ -695,10 +704,11 @@
 // }
 
 
-// SPECIAL VARIATION OF THE ABOVE QUESTION //
+//! SPECIAL VARIATION OF THE ABOVE QUESTION //
 
 
 // Print all unique subsequences of a string //
+
 // import java.util.HashSet;
 // class demo{
 //         public static void subsequences(String str, int idx, String newString, HashSet<String>set){
@@ -730,6 +740,7 @@
 
 // Print keypad combination //
 // time complexity = O(4^n) //
+
 // class demo{
 //         public static String[] keypad = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
@@ -753,10 +764,11 @@
 
 
 
-/* RECURSION */   // CLASS 3 //
+//! RECURSION //   // CLASS 3 //
 
 // Print all permutations of a string //
 // time complexity = O(n!) //
+
 // class demo{
 //         public static void printPerm(String str, String permutation){
 //                 if(str.length()==0){
@@ -781,6 +793,7 @@
 
 // Count total paths in  maze to move from (0,0) to (n,n) //
 // dynamic programming approach + backtracking //
+
 // class demo{
 //         public static int countPaths( int i, int j, int n, int m){
 //                 if(i==n || j==n){
@@ -808,6 +821,7 @@
 
 
 // Place tiles of size 1xm in a floor of size nxm //
+
 // class demo{
 //         public static int placeTiles(int n, int m){
 //                 if(n==m){
@@ -837,6 +851,7 @@
 
 
 // Find the numbers of ways in which you can invite n people to party, single or in pairs //
+
 // class demo{
 //         public static int callGuests( int n){
 //                 if(n<=1){
@@ -861,6 +876,7 @@
 
 // Print all the subsets of a set of first n natural numbers //
 // time complexity = O(2^n) //
+
 // import java.util.*;
 // class demo{
 //         public static void printSubset(ArrayList<Integer> subset){
@@ -893,10 +909,11 @@
 
 
 
-/* BACKTRACKING */
+//! BACKTRACKING //
 
 // All possible arrangements //
 // Time complexity = O(n*n!) //
+
 // class demo{
 //         public static void printPermutation(String str, String perm, int idx){
 //                 if(str.length() == 0){
@@ -1030,7 +1047,7 @@
 
 
 
-// Java Sudoku Solver // BackTracking //
+//! Java Sudoku Solver // BackTracking //
 
 // class demo{
 //         public boolean isSafe(char[][]board, int row, int col, int number){
@@ -1094,7 +1111,7 @@
 
 
 
-/* ARRAY LIST  */
+//! ARRAY LIST  !//
 
 // import java.util.ArrayList;
 // import java.util.Collections;
@@ -1148,3 +1165,8 @@
 //                System.out.println(list);
 //         }
 // }
+
+
+
+//! HASHSET !//
+
