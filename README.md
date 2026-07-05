@@ -1,71 +1,96 @@
-Update - Will do BackTracking on Monday 
+🚀 Striver A2Z DSA Journey (Java)
 
-# 🚀 DSA Journey
+Consistency beats intensity. One problem at a time.
 
-Welcome to my **DSA Journey** repository!
+📌 About
 
-This repository documents my learning and practice of **Data Structures and Algorithms (DSA)** using Java. The goal is to strengthen problem-solving skills, improve coding efficiency, and prepare for coding interviews.
+Welcome to my Data Structures & Algorithms journey.
 
-## 📌 About
+Starting Monday, I’m committing to solving problems from the Striver A2Z DSA Sheet by TakeUForward using Java. This repository will serve as my learning journal where I’ll upload my solutions, notes, and progress consistently.
 
-This repository contains solutions and implementations of:
+The goal is simple:
 
-- Basic Java Programs
-- Pattern Printing
-- Arrays & Strings
-- Searching Algorithms
-- Sorting Algorithms
-- Recursion
-- Linked Lists
-- Stacks & Queues
-- Trees & Graphs
-- Dynamic Programming
-- LeetCode Problems
-- Interview Questions
+* 💻 Build strong problem-solving skills
+* 🧠 Master Data Structures & Algorithms
+* 📈 Stay consistent every single week
+* 🎯 Prepare for Software Engineering interviews
 
-## 🎯 Goals
+⸻
 
-- Build strong DSA fundamentals
-- Improve problem-solving ability
-- Maintain coding consistency
-- Prepare for technical interviews
-- Track learning progress publicly
+📚 Learning Resource
 
-## 🛠️ Language
+I’m following the Striver A2Z DSA Sheet by TakeUForward.
 
-- Java ☕
+🔗 Roadmap: Striver A2Z DSA Sheet
 
-## 📈 Progress
+The sheet provides a structured roadmap covering:
 
-This repository is updated as I learn new concepts and solve more problems.
+* Basics
+* Sorting
+* Arrays
+* Binary Search
+* Strings
+* Linked Lists
+* Stack & Queue
+* Recursion
+* Trees
+* BST
+* Graphs
+* Dynamic Programming
+* Tries
+* Greedy
+* Heaps
+* Bit Manipulation
+* And much more…
 
-> "Every problem solved is a step forward in the journey of becoming a better programmer."
+⸻
 
-## 📚 Learning Resources
+🛠 Language
 
-- LeetCode
-- GeeksforGeeks
-- CodeChef
-- HackerRank
-- Striver's DSA Sheet
-- Apna College DSA Course
+* Java ☕
 
-## ⚠️ Current Status
+⸻
 
-> **DSA Journey is temporarily paused.**
->
-> I am currently focusing on completing my DSA lectures and building a strong conceptual foundation.
->
-> The journey will continue with regular updates and problem solutions once the lecture series is completed.
+📅 Challenge
 
-## 🤝 Contributions
+Starting this Monday:
 
-This repository is mainly for my personal learning journey, but suggestions and improvements are always welcome.
+* ✅ Solve DSA problems regularly
+* ✅ Write clean and optimized code
+* ✅ Learn the intuition behind every problem
 
-## ⭐ Support
+There is no finish line—only continuous improvement.
 
-If you find this repository helpful, consider giving it a **star ⭐** and following my journey.
+⸻
 
----
+🎯 Goals
 
-### Happy Coding! 💻
+* Complete the entire A2Z Sheet
+* Improve problem-solving speed
+* Strengthen Java fundamentals
+* Become interview-ready
+* Maintain consistency over motivation
+
+⸻
+
+📈 Progress
+
+Topic	Status
+Basics	⏳
+Sorting	⏳
+Arrays	⏳
+Binary Search	⏳
+Strings	⏳
+Linked List	⏳
+Stack & Queue	⏳
+Trees	⏳
+Graphs	⏳
+Dynamic Programming	⏳
+
+⸻
+
+⭐ Quote
+
+“Small progress, repeated every day, leads to extraordinary results.”
+
+If you’re on the same journey, feel free to star ⭐ the repository or connect with me. Let’s grow together!
