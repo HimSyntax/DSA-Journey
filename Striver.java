@@ -33,3 +33,93 @@
 //           System.out.println("Reversed Number = " + reverse);
 //     }
 // }
+
+// Check Palindrome //
+
+// import java.util.Scanner;
+// class Striver{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+        
+//     int revNum = 0;
+//     int dup = n;
+
+//     while(n>0){
+//         int digit = n%10;
+//         revNum = (revNum*10) + digit;
+//         n = n/10;
+//     }
+//     if(dup==revNum){
+//         System.out.println("Palindrome");
+//     } else {
+//         System.out.println("Not palindrome");
+//     }
+//     }
+// }
+
+// Armstrong Number //
+
+// import java.util.Scanner;
+// class Striver{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter Number");
+//         int n = sc.nextInt();
+
+//         int original = n;
+//         int sum = 0;
+
+//         while(n>0){
+//             int digit = n%10;
+//             sum = sum+(digit*digit*digit);
+//             n = n/10;
+//         }
+//         if(sum==original){
+//             System.out.println("Armstrong number");
+//         } else {
+//             System.out.println("Not Armstrong number");
+//         }
+//         }
+//     }
+
+// Print all divisors //
+
+// import java.util.Scanner;
+// class Striver{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         for(int i=1; i<=n; i++){
+//             if(n % i == 0){
+//                 System.out.println(i);
+//             } 
+//         }
+//         System.out.println();
+//     }
+// }
+
+// GCD or HCF //
+
+// import java.util.Scanner;
+// class Striver{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter number");
+//         int a = sc.nextInt();
+
+//         System.out.println("Enter number");
+//         int b = sc.nextInt();
+
+//         int gcd =1;
+
+//         for (int i = 1; i <= a && i <= b; i++) {
+//             if (a % i == 0 && b % i == 0) {
+//                 gcd = i;
+//             }
+//     }
+//     System.out.println("GCD = " + gcd);
+// }
+// }
