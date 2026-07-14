@@ -1,4 +1,4 @@
-🚀 Striver A2Z DSA Journey (Java)
+🚀 Striver A2Z DSA Journey : (Java)
 
 Consistency beats intensity. One problem at a time.
 
