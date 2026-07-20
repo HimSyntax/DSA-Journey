@@ -123,3 +123,49 @@
 //     System.out.println("GCD = " + gcd);
 // }
 // }
+
+
+
+//! BASIC RECURSION !//
+
+
+// Print name N times using recursion //
+
+// class Striver{
+//     public static void printName(int n){
+//         if(n==0){
+//             return;
+//         }
+//         System.out.println("Himanshu");
+//         printName(n-1);
+
+//     }
+//     public static void main(String[] args) {
+//         int n = 10;
+//         printName(n);
+//     }
+// }
+
+	
+// Sum of First N Numbers //
+
+// import java.util.*;
+// class Striver{
+
+//     public static void printN(int n, int sum){
+//         if(n<1){
+//             System.out.println(sum);
+//             return;
+//         }
+//         printN(n-1, sum +n);
+//     }
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter n : ");
+
+//         int N = sc.nextInt();
+
+//         printN(N,0);
+//     }
+// }
