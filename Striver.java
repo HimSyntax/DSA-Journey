@@ -232,3 +232,27 @@
 //         System.out.println(count);
 //     }
 // }
+
+
+
+//! SORTING !//
+
+// Insertion Sort //
+
+// import java.util.Arrays;
+// class Striver {
+//     public static void main(String[] args) {
+//         int [] nums = { 14,9,15,12,6,8,13 };
+
+//         for(int i=0; i<=nums.length-1; i++){
+//             int j=i;
+//             while(j>0 && nums[j-1]>nums[j]){
+//                 int temp = nums[j];
+//                 nums[j] = nums[j-1];
+//                 nums[j-1] = temp;
+//                 j--;
+//             }
+//         }
+//         System.out.println(Arrays.toString(nums));
+//         }
+//     }
