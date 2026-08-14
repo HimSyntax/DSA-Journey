@@ -379,7 +379,7 @@
 // }
 
 
-// Check if the Array is Sorted //
+// Remove Duplicates from sorted Array //
 
 // class Striver {
 //     public static void main(String[] args) {
