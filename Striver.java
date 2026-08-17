@@ -1,7 +1,4 @@
-                        // ! STRIVER A.2.Z DSA ! //
 
-
-//! BASIC MATHS !//
 
 
 // Count Digits //
@@ -479,5 +476,75 @@
 //         for(int i=0; i<j; i++){
 //             System.out.print(temp[i] + " ");
 //         }
+//     }
+// }
+
+
+// Linear Search //
+
+// class Striver{
+//     public static void main(String[] args) {
+
+//         int[]arr = {6,7,8,4,1};
+//         int nums = 4;
+//         for(int i=0; i<arr.length; i++){
+//             if(arr[i]==nums){
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }
+
+
+// Union of two Sorted Array //
+
+// import java.util.*;
+// class Striver{
+//     public static void main(String[] args) {
+
+//         int[]arr1 = {1,1,2,3,4,5};
+//         int[]arr2 = {2,3,4,5};
+        
+//         Set<Integer>st = new HashSet<>();
+//         for(int i=0; i<arr1.length; i++){
+//             st.add(arr1[i]);
+//         }
+//         for(int i=0; i<arr2.length; i++){
+//             st.add(arr2[i]);
+//         }
+
+//         int [] Union = new int[st.size()];
+//         int i = 0;
+
+//         for(int it : st){
+//             Union[i++] = it;
+//         }
+
+//         System.out.println(Arrays.toString(Union));
+//     }
+// }
+
+
+// Find Missing Number //
+
+// class Striver{
+//     public static void main(String[] args) {
+
+//         int[]arr = {0,1,2,4,1,5};
+//         int n = arr.length;
+
+//         for(int i=0; i<=n; i++){
+//             int flag = 0;
+//             for(int j=0; j<n; j++){
+//                 if(arr[j]==i){
+//                     flag = 1;
+//                     break;
+//                 }
+//             }
+//             if(flag==0){
+//                 System.out.println(i);
+//             }
+//         }
+
 //     }
 // }
