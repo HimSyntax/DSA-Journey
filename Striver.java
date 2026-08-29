@@ -234,18 +234,18 @@
 // import java.util.Arrays;
 // class Striver {
 //     public static void main(String[] args) {
-//         int [] nums = { 14,9,15,12,6,8,13 };
+//         int []arr = { 14,9,15,12,6,8,13 };
 
-//         for(int i=0; i<=nums.length-1; i++){
+//         for(int i=0; i<arr.length-1; i++){
 //             int j=i;
-//             while(j>0 && nums[j-1]>nums[j]){
-//                 int temp = nums[j];
-//                 nums[j] = nums[j-1];
-//                 nums[j-1] = temp;
+//             while(j>0 &&arr[j-1]arr[j]){
+//                 int temp =arr[j];
+//                arr[j] =arr[j-1];
+//                arr[j-1] = temp;
 //                 j--;
 //             }
 //         }
-//         System.out.println(Arrays.toString(nums));
+//         System.out.println(Arrays.toStringarr));
 //         }
 //     }
 
@@ -415,37 +415,37 @@
 
 // class Striver {
     
-//     public static void reverseArray(int[]nums, int start, int end){
+//     public static void reverseArray(int[arr, int start, int end){
 //         while (start<end) { 
-//             int temp = nums[start];
-//             nums[start] = nums[end];
-//             nums[end] = temp;
+//             int temp =arr[start];
+//            arr[start] =arr[end];
+//            arr[end] = temp;
 //             start++;
 //             end--;
 //         }
 //     }
 
-//     public static int[] rotateArray(int[]nums, int k, String direction){
-//         int n = nums.length;
+//     public static int[] rotateArray(int[arr, int k, String direction){
+//         int n =arr.length;
 //         if(n==0 || k==0){
-//             return nums;
+//             returnarr;
 //         }
 //         k = k%n;
 //         if(direction.equals("Left")){
-//             reverseArray(nums, 0, k-1);
-//             reverseArray(nums,  k, n-1);
-//             reverseArray(nums, 0, n-1);
+//             reverseArrayarr, 0, k-1);
+//             reverseArrayarr,  k, n-1);
+//             reverseArrayarr, 0, n-1);
 //         }
-//         return nums;
+//         returnarr;
 
 //     }
 
 //     public static void main(String[] args) {
-//         int[]nums = {1,2,3,4,5,6,7};
+//         int[arr = {1,2,3,4,5,6,7};
 //         int k =3;
 //         String direction = "Left";
 
-//         int[]result = rotateArray(nums, k, direction);
+//         int[]result = rotateArrayarr, k, direction);
 
 //         for(int num : result){
 //             System.out.print(num + " ");
@@ -483,9 +483,9 @@
 //     public static void main(String[] args) {
 
 //         int[]arr = {6,7,8,4,1};
-//         int nums = 4;
+//         intarr = 4;
 //         for(int i=0; i<arr.length; i++){
-//             if(arr[i]==nums){
+//             if(arr[i]=arr){
 //                 System.out.println(i);
 //             }
 //         }
@@ -758,5 +758,47 @@
 //             }
 //         }
 //         System.out.println(-1);
+//     }
+// }
+
+
+// Kadane's Algorithm //
+
+// class Striver {    // Brute //
+//     public static void main(String[] args) {
+        
+//         int[]arr = {-2,-3,4,-1,-2,1,5,-3};
+//         int n = arr.length;
+//         int max = Integer.MIN_VALUE;
+        
+//         for(int i=0; i<n; i++){
+//             int sum = 0;
+//             for(int j=i; j<n; j++){
+//                  sum += arr[j];
+
+//                  max = Math.max(sum, max);
+//             }
+//         }
+//         System.out.println(max);
+//     }
+// }
+
+// class Striver{    // Optimal //
+//     public static void main(String[]args) {
+
+//         int[]arr = {-2,-3,4,-1,-2,1,5,-3};
+//         int sum = 0;
+//         int max = Integer.MIN_VALUE;
+
+//         for (int i = 0; i <arr.length; i++) {
+//             sum +=arr[i];
+//             max = Math.max(max, sum);
+
+//             if (sum < 0) {
+//                 sum = 0;
+//             }
+//         }
+
+//         System.out.println(max);
 //     }
 // }
