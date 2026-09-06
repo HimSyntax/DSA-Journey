@@ -802,3 +802,22 @@
 //         System.out.println(max);
 //     }
 // }
+
+
+//  Best Time to Buy and Sell Stock // 
+
+// class Striver{
+//     public static void main(String[] args) {
+         
+//         int [] prices = {7,1,5,3,6,4};
+//         int maxProfit = 0;
+//         int bestBuy = prices[0];
+//         for(int i=1; i<prices.length; i++){
+//             if( prices[i]>bestBuy){
+//                 maxProfit = Math.max(maxProfit, prices[i]-bestBuy);
+//             }
+//             bestBuy = Math.min(bestBuy,prices[i]);
+//         }
+//         System.out.println(maxProfit);
+//     }
+// }
