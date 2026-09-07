@@ -821,3 +821,168 @@
 //         System.out.println(maxProfit);
 //     }
 // }
+
+
+// Rearrange array elements by sign //
+
+// import java.util.*;
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {3,1,-2,-5,2,-4};
+//         int n = arr.length;
+//         int[]positives = {3,1,2};
+//         int[]negatives = {-2,-5,-4};
+
+//         for(int i=0; i<n/2; i++){
+//            arr[i*2] = positives[i];
+//            arr[i*2+1] = negatives[i];
+//         }
+
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+
+// Next Permutation //
+
+// import java.util.ArrayList;
+// import java.util.Arrays;
+// import java.util.List;
+
+// class Striver {
+//     public static void main(String[] args) {
+
+//         int[] arr = {3, 1, 2};
+//         List<int[]> list = new ArrayList<>();
+//         generate(arr, 0, list);
+
+//         // Sort permutations
+//         list.sort((a, b) -> {
+//             for (int i = 0; i < a.length; i++) {
+//                 if (a[i] != b[i]) {
+//                     return Integer.compare(a[i], b[i]);
+//                 }
+//             }
+//             return 0;
+//         });
+
+//         // Find current permutation
+//         for (int i = 0; i < list.size(); i++) {
+//             if (Arrays.equals(arr, list.get(i))) {
+//                 int[] ans;
+//                 if (i + 1 < list.size()) {
+//                     ans = list.get(i + 1);
+//                 } else {
+//                     ans = list.get(0);
+//                 }
+
+//                 // Copy answer into original arr
+//                 for (int j = 0; j < arr.length; j++) {
+//                     arr[j] = ans[j];
+//                 }
+//                 break;
+//             }
+//         }
+
+//         // Print answer
+//         System.out.println(Arrays.toString(arr));
+//     }
+
+//     public static void generate(int[] arr, int index, List<int[]> list) {
+
+//         if (index == arr.length) {
+//             list.add(arr.clone());
+//             return;
+//         }
+//         for (int i = index; i < arr.length; i++) {
+//             swap(arr, index, i);
+//             generate(arr, index + 1, list);
+//             swap(arr, index, i);
+//         }
+//     }
+
+//     public static void swap(int[] arr, int i, int j) {
+
+//         int temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+
+// Optimal //
+
+// class Solution {
+//     public void nextPermutation(int[] nums) {
+
+//         int n = nums.length;
+
+//         // Step 1: Find the breakpoint
+//         int i = n - 2;
+
+//         while (i >= 0 && nums[i] >= nums[i + 1]) {
+//             i--;
+//         }
+
+//         // Step 2: Find the next greater element
+//         if (i >= 0) {
+//             int j = n - 1;
+
+//             while (nums[j] <= nums[i]) {
+//                 j--;
+//             }
+
+//             // Swap
+//             swap(nums, i, j);
+//         }
+
+//         // Step 3: Reverse the remaining part
+//         reverse(nums, i + 1, n - 1);
+//     }
+
+//     public void swap(int[] nums, int i, int j) {
+//         int temp = nums[i];
+//         nums[i] = nums[j];
+//         nums[j] = temp;
+//     }
+
+//     public void reverse(int[] nums, int left, int right) {
+//         while (left < right) {
+//             swap(nums, left, right);
+//             left++;
+//             right--;
+//         }
+//     }
+// }
+
+
+// Leaders in an Array //
+
+// import java.util.ArrayList;
+// import java.util.List;
+
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {1, 2, 5, 3, 1, 2};
+//         int n = arr.length;
+//         List<Integer> ans = new ArrayList<>();
+
+//         for(int i=0; i<n; i++){
+//             boolean leader = true;
+//             for(int j=i+1; j<n; j++){
+//                 if(arr[j]>arr[i]){
+//                     leader = false;
+//                     break;
+//                 }
+//             }
+//             if(leader==true){
+//                 ans.add(arr[i]);
+//             }
+//         }
+//         System.out.println(ans);
+//     }
+// }
