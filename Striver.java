@@ -986,3 +986,23 @@
 //         System.out.println(ans);
 //     }
 // }
+
+// Optimal
+
+// import java.util.*;
+// class Striver {
+//     public static void main(String[] args) {
+//         int[]arr = {10,22,8,12,3,0,6};
+//         int n = arr.length;
+//         int max = Integer.MIN_VALUE;
+//         List<Integer>ans = new ArrayList<>();
+
+//         for(int i=n-1; i>=0; i--){
+//             if(arr[i]>max){
+//                 ans.add(arr[i]);
+//             }
+//             max = Math.max(max,arr[i]);
+//         }
+//         System.out.println(ans);
+//     }
+// }
