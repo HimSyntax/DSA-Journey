@@ -1006,3 +1006,110 @@
 //         System.out.println(ans);
 //     }
 // }
+
+
+// Longest Consecutive Sequence in an Array //
+
+// class Solution {
+//     // Function to search for a given number in the array
+//     private boolean linearSearch(int[] a, int num) {
+//         // Get length of the array
+//         int n = a.length;
+//         // Traverse through the array to check if the number exists
+//         for (int i = 0; i < n; i++) {
+//             // If element matches the number, return true
+//             if (a[i] == num)
+//                 return true;
+//         }
+//         // Number not found
+//         return false;
+//     }
+
+//     // Function to find the length of the longest consecutive sequence
+//     public int longestConsecutive(int[] nums) {
+//         // If the array is empty, no sequence exists
+//         if (nums.length == 0) {
+//             return 0;
+//         }
+//         // Get length of the array
+//         int n = nums.length;
+//         // Initialize the longest sequence length to 1 (minimum possible)
+//         int longest = 1;
+//         // Iterate over each element of the array
+//         for (int i = 0; i < n; i++) {
+//             // Store the current number
+//             int x = nums[i];
+//             // Start sequence length count from 1
+//             int cnt = 1;
+//             // Search for consecutive numbers starting from x + 1
+//             while (linearSearch(nums, x + 1) == true) {
+//                 // Move to the next consecutive number
+//                 x += 1;   
+//                 // Increase the count of the current sequence
+//                 cnt += 1;
+//             }
+//             // Update the longest sequence length if the current is longer
+//             longest = Math.max(longest, cnt);
+//         }
+//         // Return the longest consecutive sequence length found
+//         return longest;
+//     }
+
+//     public static void main(String[] args) {
+//         // Input array of integers
+//         int[] a = {100, 4, 200, 1, 3, 2};
+//         // Create an instance of Solution class
+//         Solution solution = new Solution();
+//         // Call the function and store the result
+//         int ans = solution.longestConsecutive(a);
+//         // Output the result
+//         System.out.println("The longest consecutive sequence is " + ans);
+//     }
+// }
+
+
+// Set Matrix Zero //
+
+// class Solution {
+//     public void setZeroes(int[][] matrix) {
+//         int m = matrix.length;
+//         int n = matrix[0].length;
+
+//         for (int i = 0; i < m; i++) {
+//             for (int j = 0; j < n; j++) {
+//                 if (matrix[i][j] == 0) {
+//                     for (int col = 0; col < n; col++) {
+//                         if (matrix[i][col] != 0)
+//                             matrix[i][col] = -1;
+//                     }
+//                     for (int row = 0; row < m; row++) {
+//                         if (matrix[row][j] != 0)
+//                             matrix[row][j] = -1;
+//                     }
+//                 }
+//             }
+//         }
+//         for (int i = 0; i < m; i++) {
+//             for (int j = 0; j < n; j++) {
+//                 if (matrix[i][j] == -1)
+//                     matrix[i][j] = 0;
+//             }
+//         }
+//     }
+// }
+
+// public class Striver{
+//     public static void main(String[] args) {
+//         int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
+        
+//         Solution sol = new Solution();
+//         sol.setZeroes(matrix);
+        
+//         for (int[] row : matrix) {
+//             for (int val : row) {
+//                 System.out.print(val + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
