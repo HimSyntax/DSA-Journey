@@ -1167,3 +1167,27 @@
 //         }
 //     }
 // }
+
+
+// Pascal's Triangle I //
+
+// import java.util.*;
+// class Striver {
+
+//     static int nCr(int n, int r){
+//             int res = 1;
+//             for(int i=0; i<r; i++){
+//                 res = res*(n-i);
+//                 res = res/(i+1);
+//             }
+//             return res;
+//         }
+
+//     public static void main(String[] args) {
+//         List<List<Integer>> ans = new ArrayList<>();
+//         int n = 4;
+//         int r = 2;
+
+//         System.out.println(nCr(n,r));
+//     }
+// }
