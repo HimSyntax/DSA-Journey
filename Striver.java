@@ -1191,3 +1191,65 @@ class Striver {
         System.out.println(nCr(n,r));
     }
 }
+
+! Leetcode !//
+
+import java.util.*;
+class Striver{
+    public list<list<Integer>> generate(int numRows) {
+
+        list<list<Integer>> ans = new Arraylist<>();
+
+        for(int i=0; i<numRows; i++){
+            list<Integer> row = new Arraylist<>();
+            for(int j=0; j<=i; j++){
+                row.add(nCr(i,j));
+            }
+            ans.add(row);
+        }
+        return ans;
+    }
+
+        public int nCr( int r, int c){
+
+            int res = 1;
+
+            for(int i=0; i<c; i++){
+                res = res*(r-i);
+                res = res/(i+1);
+            }
+        return res;
+    }
+}
+
+
+// Majority Element II //
+
+import java.util.*;
+class Striver {
+    public static void main(String[] args) {
+        
+        int[]arr = {1, 2, 1, 1, 3, 2,2};
+        int n = arr.length;
+        int cnt = 0;
+
+        List<Integer>list = new ArrayList<>();
+
+        for(int i=0; i<n; i++){
+            if(list.contains(arr[i])){
+                continue;
+            }
+            cnt = 0;
+
+            for(int j=0; j<n; j++){
+                if(arr[j]==arr[i]){
+                    cnt++;
+                }
+            }
+                if(cnt>n/3){
+                    list.add(arr[i]);
+                }
+            }
+        System.out.println(list);
+    }
+}
