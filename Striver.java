@@ -1253,3 +1253,33 @@ class Striver {
         System.out.println(list);
     }
 }
+
+
+3 Sum //
+
+// Brute
+import java.util.*;
+class Striver {
+    public static void main(String[] args) {
+        
+        int[]arr = {2, -2, 0, 3, -3, 5};
+        int n = arr.length;
+
+        List<List<Integer>>ans = new ArrayList<>();
+
+        for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                for(int k=j+1; k<n; k++){
+                    if(arr[i]+arr[j]+arr[k]==0){
+                        List<Integer>temp = Arrays.asList(arr[i],arr[j], arr[k]);
+                        Collections.sort(temp);
+                        if(!ans.contains(temp)){
+                            ans.add(temp);
+                        }
+                    }
+                }
+            }
+        }
+        System.out.println(ans);
+    }
+}
