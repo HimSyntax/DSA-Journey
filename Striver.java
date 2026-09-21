@@ -1283,3 +1283,30 @@ class Striver {
         System.out.println(ans);
     }
 }
+
+
+//Better
+class Striver {
+    public static void main(String[] args) {
+        
+        int[]arr = {2, -2, 0, 3, -3, 5};
+        int n = arr.length;
+
+        Set<List<Integer>>ans = new HashSet<>();
+
+        for(int i=0; i<n; i++){
+            HashSet<Integer>set = new HashSet<>();
+            for(int j=i+1; j<n; j++){
+                int third = -(arr[i]+arr[j]);
+
+                if(set.contains(third)){
+                    List<Integer>temp = Arrays.asList(arr[i],arr[j],third);
+                    Collections.sort(temp);
+                    ans.add(temp);
+                }
+                set.add(arr[j]);
+            } 
+        }
+        System.out.println(ans);
+    }
+}
