@@ -1,13 +1,4 @@
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-
-
-// class Striver{
 //     public static void main(String[] args) {
 //         int num = 1234;
 //         int count = 0;
@@ -1313,6 +1304,42 @@ import java.util.Set;
 //                 set.add(arr[j]);
 //             } 
 //         }
+//         System.out.println(ans);
+//     }
+// }
+
+
+// 4 Sum //
+
+// import java.util.*;
+// class Striver{
+//     public static void main(String[] args) {
+
+//         int[]nums = {1, -2, 3, 5, 7, 9};
+//         int n = nums.length;
+//         int target = 7;
+
+//         Set<List<Integer>> ans = new HashSet<>();
+    
+//         for(int i=0; i<n; i++){
+//             List<List<Integer>>answer = new ArrayList<>();
+//             for(int j=i+1; j<n; j++){
+//                 for(int k=j+1; k<n; k++){
+//                     for(int l=k+1; l<n; l++){
+//                         long sum = (long) nums[i]+nums[j];
+//                         sum += nums[k];
+//                         sum+= nums[l];
+
+//                         if(sum==target){
+//                             List<Integer>temp = Arrays.asList(nums[i],nums[j],nums[k],nums[l]);
+//                             Collections.sort(temp);
+//                             ans.add(temp);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
 //         System.out.println(ans);
 //     }
 // }
