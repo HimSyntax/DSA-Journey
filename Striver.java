@@ -1,5 +1,4 @@
 
-//     public static void main(String[] args) {
 //         int num = 1234;
 //         int count = 0;
 
@@ -1341,5 +1340,41 @@
 //         }
 
 //         System.out.println(ans);
+//     }
+// }
+
+
+// Find the repeating and missing number //
+
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {3,5,4,1,1};
+//         int n = arr.length;
+        
+//         int repeating = -1;
+//         int missing = -1;
+
+//         for(int i=0; i<n; i++){
+//             int cnt = 0;
+            
+//             for(int j=i+1; j<n; j++){
+//                 if(arr[j]==i){
+//                     cnt++;
+//                 }
+//             }
+//             if(cnt==2){
+//                 repeating = i;
+//             }
+//             else if(cnt==0){
+//                 missing = i;
+//             }
+//             if(repeating!=-1 && missing!=-1){
+//                 break;
+//             }
+//         }
+
+//         System.out.println("Repeating : " + repeating +" "+ "Missing : " + missing);
+        
 //     }
 // }
