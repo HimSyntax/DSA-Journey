@@ -1378,3 +1378,145 @@
         
 //     }
 // }
+
+
+// Count Inversions //
+
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {2,3,7,1,3,5};
+//         int n = arr.length;
+
+//         int cnt = 0;
+
+//          for(int i=0; i<n; i++){
+//             for(int j=i+1; j<n; j++){
+//                 if(arr[i]>arr[j]){
+//                     cnt ++;
+//                 }
+//             }
+//          }
+//          System.out.println(cnt);
+//     }
+// }
+
+
+// Reverse Pairs //
+
+// import java.util.Arrays;
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {6, 4, 1, 2, 7};
+//         int n= arr.length;
+
+//         int cnt = 0;
+
+//         for(int i=0; i<n; i++){
+//             for(int j=i+1; j<n; j++){
+//                 if(arr[i] > 2*arr[j]){
+//                     cnt++;
+//                 }
+//             }
+//         }
+//         System.out.println("Arrays : " + " " + Arrays.toString(arr));
+//         System.out.println("Pairs : " + " " + cnt);
+//     }
+// }
+
+// Optimal
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {6,4,1,2,7};
+//         int n = arr.length;
+       
+//         int cnt = 0;
+//         int low = 0;
+//         int mid = 2;
+//         int high = n-1;
+//         int right = mid+1;
+
+//         for(int i=low; i<=mid; i++){
+//             while(right<=high && arr[i]>2*arr[right]){
+//                 right++;
+//             }
+//             cnt = cnt + ( right - (mid+1) );
+//         }
+//         System.out.println(cnt);
+//     }
+// }
+
+// Using Merge Sort
+
+// class Striver {
+
+//     public int reversePairs(int[] nums) {
+//         return mergeSort(nums, 0, nums.length - 1);
+//     }
+
+//     public int mergeSort(int[] nums, int low, int high) {
+
+//         if (low >= high) {
+//             return 0;
+//         }
+
+//         int mid = low + (high - low) / 2;
+
+//         int cnt = mergeSort(nums, low, mid);
+//         cnt += mergeSort(nums, mid + 1, high);
+//         cnt += countPairs(nums, low, mid, high);
+
+//         merge(nums, low, mid, high);
+
+//         return cnt;
+//     }
+
+//     public int countPairs(int[] nums, int low, int mid, int high) {
+
+//         int right = mid + 1;
+//         int cnt = 0;
+
+//         for (int i = low; i <= mid; i++) {
+
+//             while (right <= high && nums[i] > 2L * nums[right]) {
+//                 right++;
+//             }
+
+//             cnt += right - (mid + 1);
+//         }
+
+//         return cnt;
+//     }
+
+//     public void merge(int[] nums, int low, int mid, int high) {
+
+//         int[] temp = new int[high - low + 1];
+
+//         int left = low;
+//         int right = mid + 1;
+//         int k = 0;
+
+//         while (left <= mid && right <= high) {
+
+//             if (nums[left] <= nums[right]) {
+//                 temp[k++] = nums[left++];
+//             } else {
+//                 temp[k++] = nums[right++];
+//             }
+//         }
+
+//         while (left <= mid) {
+//             temp[k++] = nums[left++];
+//         }
+
+//         while (right <= high) {
+//             temp[k++] = nums[right++];
+//         }
+
+//         for (int i = 0; i < temp.length; i++) {
+//             nums[low + i] = temp[i];
+//         }
+//     }
+// }
