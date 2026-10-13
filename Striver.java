@@ -1522,7 +1522,7 @@
 // }
 
 
-// Maximum Product Subarray in an Array //
+ // Maximum Product Subarray in an Array //
 
 // class Striver {
 //     public static void main(String[] args) {
@@ -1545,5 +1545,50 @@
 //         }
 //         System.out.println(maxProduct);
 
+//     }
+// }
+
+
+// Merge two sorted arrays without extra space //
+
+// import java.util.Arrays;
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[] arr1 = {-5, -2, 4, 5};
+//         int[] arr2 = {-3, 1, 8};
+
+//     // Step 1: Store the lengths of both arrays
+
+//     int n = arr1.length;  // n = 4
+//     int m = arr2.length;  // m = 3
+
+//     // Step 2: Initialize three pointers
+
+//     int idx = 0;  // Position in the result array
+//     int i = 0;    // Position in arr1
+//     int j = 0;    // Position in arr2
+
+//     // Step 3: Create an array large enough to hold all elements
+//     int[] result = new int[n + m];  // Size = 7
+//     // Step 4: Compare elements from both arrays
+//     while (i < n && j < m) {
+//         if (arr1[i] <= arr2[j]) {
+//             result[idx++] = arr1[i++];
+//         } else {
+//             result[idx++] = arr2[j++];
+//         }
+//     }
+//     // Step 5: Copy remaining elements from arr1
+//     while (i < n) {
+//         result[idx++] = arr1[i++];
+//     }
+//     // Step 6: Copy remaining elements from arr2
+//     while (j < m) {
+//         result[idx++] = arr2[j++];
+//     }
+//     // Step 7: Print the merged array
+//     System.out.println(Arrays.toString(result));
+        
 //     }
 // }
