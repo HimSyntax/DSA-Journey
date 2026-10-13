@@ -1520,3 +1520,30 @@
 //         }
 //     }
 // }
+
+
+// Maximum Product Subarray in an Array //
+
+// class Striver {
+//     public static void main(String[] args) {
+        
+//         int[]arr = {4, 5, 3, 7, 1, 2};
+//         int n = arr.length;
+
+//         long maxProduct = arr[0];
+
+//         for(int i=0; i<n; i++){
+//             long currentProduct = 1;
+
+//             for(int j=i; j<n; j++){
+//                 currentProduct = currentProduct * arr[j];
+
+//             if(currentProduct>maxProduct){
+//                 maxProduct = currentProduct;
+//             }
+//         }
+//         }
+//         System.out.println(maxProduct);
+
+//     }
+// }
